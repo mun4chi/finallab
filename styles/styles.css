@@ -1,0 +1,354 @@
+/************* your name: 
+
+INSTRUCTIONS:
+Comments starting with TO-DO have been included in this file to describe the needed styling: please translate these to the appropriate CSS declarations. 
+
+Comments starting with TO-DO may be left in for reference or removed entirely: all other comments should be left as-is for ease of review.
+
+You are discouraged from changing any provided CSS.
+
+***** colour palette: *****
+- mustard yellow (used for header, footer, and buttons): #E5AF42
+- cornflower blue (used for hover states): #4278e5
+
+*/
+
+
+/************* site defaults *************/
+body {
+    width: 950px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+header {
+    background-color: #E5AF42; 
+    height: 150px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px; 
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 25px 0 25px 25px; 
+}
+
+header h1 {
+    font-size: 48px;
+    text-align: center;
+    line-height: 150px; 
+    margin: 0;
+}
+
+main.index {
+    padding: 20px;
+    margin-bottom: 50px; 
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px; 
+    margin: 50px 0;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    gap: 25px; 
+}
+
+.about-us section {
+    flex: 1; 
+}
+
+.about-us h2 {
+    font-size: 36px;
+    color: black; 
+    line-height: 36px; 
+    margin-bottom: 12px; /
+}
+
+.about-us p {
+    margin-bottom: 12px; 
+}
+
+img[src*="dog-yellow-background"] {
+    width: 300px; 
+    margin-bottom: 50px; 
+    
+    
+}
+
+.fake-button {
+    display: inline-block;
+    background-color: #E5AF42; 
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid black; 
+    line-height: 3;
+    text-decoration: none; 
+    font-weight: 600;
+    border-radius: 5px;
+    width: 250px; 
+    text-align: center;
+}
+
+.fake-button:hover, 
+.fake-button.blue-hover:hover {
+    background-color: #4278e5; 
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a {
+    color: black; 
+    text-decoration: none; 
+}
+
+footer {
+    background-color: #E5AF42; 
+    height: 60px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: auto; 
+    padding: 10px 0; 
+    width: 100%; 
+    position: fixed;
+    bottom: 0; 
+
+}
+
+footer p {
+    margin: 0; 
+    font-size: 14px; 
+    color: black; 
+    text-align: center; 
+}
+
+footer a {
+    color: black; 
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+
+.booking h2 {
+    font-size: 40px;
+}
+
+.booking {
+    max-width: 600px; 
+    margin: 0 auto; 
+    text-align: center; 
+    font-size: 18px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+
+.days {
+    display: flex; 
+    justify-content: center; 
+    gap: 12px; 
+    margin-bottom: 12px; 
+}
+
+.days button {
+    width: 60px; 
+    height: 60px; 
+    border: 1px solid black; 
+    border-radius: 5px; 
+    background-color: #fff; 
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days button.clicked {
+    background-color: #E5AF42; 
+}
+
+.days button:hover {
+    background-color: #f0f0f0; 
+}
+
+
+
+
+.top-margin {
+    margin-top: 24px; 
+    margin-bottom: 12px; 
+}
+
+
+#weekly-cost {
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+}
+
+
+.clear-days {
+    width: 200px; 
+    padding: 12px; 
+    font-size: 16px; 
+    font-weight: 600;
+    background-color: #fff; 
+    border: 1px solid black; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-days:hover {
+    background-color: #4278e5; 
+    text-decoration: underline;
+    color: white;
+}
+
+.clear-days.clicked {
+    background-color: #E5AF42; 
+}
+
+
+.booking-page * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main.contact h2 {
+    font-size: 32px; 
+    font-weight: 600; 
+    text-align: center; 
+    color: #000; 
+    margin-bottom: 24px; 
+}
+
+form {
+    display: grid;
+    grid-template-columns: 150px 24px 300px; 
+    gap: 24px;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 50px; 
+}
+
+label {
+    font-weight: 600;
+    text-align: right;
+}
+
+input,
+textarea,
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid ;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+input,
+textarea {
+    width: 100%; 
+}
+
+textarea {
+    height: 150px; 
+    resize: none; 
+}
+
+input,
+textarea {
+    margin-bottom: 24px; 
+}
+
+main.contact button {
+    height: 48px;
+    width: 300px; 
+    border: 1px solid #ccc;
+    background-color: #E5AF42; 
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    grid-column: 3 / 4; 
+    justify-self: start; 
+    margin-top: 24px;
+    margin-bottom: 24px; 
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+main.contact button:hover {
+    background-color: #4278e5; 
+    color: white;
+}
+
+
+
+
+
+#thank-you-message {
+    display: none; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 24px; 
+    text-align: center; 
+    margin: 0; 
+    padding: 20px; 
+}
+
+
+
